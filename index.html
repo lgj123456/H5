@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+
+    <link rel="stylesheet" href="audio.css" media="screen" type="text/css">
+    <link rel="stylesheet" href="font-awesome.min.css" media="screen" type="text/css">
+
+</head>
+<body>
+<div id="container"></div>
+<audio id="audio">
+    <source src="a.mp3">
+
+
+</audio>
+<!--<img src="b.PNG">-->
+<label class="to-lyrics-label">
+    <i class="fa fa-caret-down fa-lg"></i>
+</label>
+
+<div class="container">
+    <div class="player">
+        <div class="cover">
+            <div class="controls">
+                <button title="循环播放"><i class="fa fa-retweet fa-lg"></i></button>
+
+                <button title="上一曲"><i class="fa fa-backward fa-2x"></i></button>
+
+                <button id="play-pause" title="播放" onclick="togglePlayPause()">
+                    <i class="fa fa-play fa-3x"></i>
+                </button>
+                <button title="下一曲"><i class="fa fa-forward fa-2x"></i></button>
+                <button title="顺序播放"><i class="fa fa-random"></i></button>
+                <input name="volume" id="volume" min="0" max="1" step="1" type="range" onchange="setVolume()">
+            </div>
+            <div class="info">
+                <p class="song"><a href="#" target="_blank">奇迹再现</a></p>
+
+                <p class="author"><a href="#" target="_blank">毛毛</a></p>
+            </div>
+            <div class="lyrics">
+                <p>奇迹再现</p>
+
+                <p>演唱： 毛毛</p>
+
+                <p>就像阳光穿过黑夜</p>
+
+                <p> 黎明悄悄划过天边</p>
+
+                <p> 谁的身影穿梭轮回间</p>
+
+                <p> 未来的路就在脚下</p>
+
+                <p> 不要悲伤不要害怕</p>
+
+                <p> 充满信心期盼着明天</p>
+
+                <p> 新的风暴已经出现</p>
+
+                <p> 怎么能够停滞不前</p>
+
+                <p> 穿越时空 竭尽全力</p>
+
+                <p> 我会来到你身边</p>
+
+                <p> 微笑面对危险</p>
+
+                <p> 梦想成真不会遥远</p>
+
+                <p> 鼓起勇气坚定向前</p>
+
+
+            </div>
+            <p class="scroll">收起</p>
+        </div>
+    </div>
+</div>
+<script src="audio.js"></script>
+</body>
+</html>
